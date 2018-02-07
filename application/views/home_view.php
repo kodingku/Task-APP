@@ -36,7 +36,7 @@
 
 </p>
 <div class="jumbotron">
-<h1 class="text-center">Welcome to the CI APP</h1>
+<h1 class="text-center">Welcome to the TASK APP</h1>
 </div>
 
 <?php if(isset($projects)): ?>
