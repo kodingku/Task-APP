@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>main view ci app</title>
+<title>Task APP</title>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
