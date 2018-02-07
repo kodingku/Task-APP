@@ -1,32 +1,23 @@
 <?php if ($this->session->userdata('logged_in')): ?>
 
-<h2>Logout</h2>
+
 <?php echo form_open('users/logout'); ?>
 
-<p>
+<div class="well">
+
+
 <?php if($this->session->userdata('username')): ?>
 
 
-<?php echo "kamu login sebagai " . $this->session->userdata('username'); ?>
+<?php echo "Kamu Login Sebagai " . strtoupper($this->session->userdata('username')); ?>
 
 
 <?php endif; ?>
 
-</p>
-
-
-<p>
-<?php if($this->session->userdata('username')): ?>
+</div>
 
 
 
-<?php echo "user id kamu adalah " . $this->session->
-userdata('user_id'); ?>
-
-
-<?php endif; ?>
-
-</p>
 
 <?php echo form_close(); ?>
 
