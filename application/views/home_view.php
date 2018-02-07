@@ -42,7 +42,7 @@
 <?php if(isset($projects)): ?>
 <h1 class="text-center">Projects</h1>
 
-<table class="table table-striped">
+<table id="myTable" class="table table-striped table-bordered" width="100%" cellspacing="0">
 	
 
 
@@ -50,6 +50,7 @@
 		<tr>
 			<th>project name</th>
 			<th>project description</th>
+			<th>View Project</th>
 		</tr>
 	</thead>
 
@@ -75,7 +76,7 @@
 <?php if(isset($tasks)): ?>
 <h1 class="text-center">Task</h1>
 
-<table class="table table-striped">
+<table  id="myTableTask" class="table table-striped table-bordered" width="100%" cellspacing="0">
 	
 
 
@@ -83,6 +84,7 @@
 		<tr>
 			<th>Task name</th>
 			<th>Task description</th>
+			<th>View Task</th>
 		</tr>
 	</thead>
 

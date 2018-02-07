@@ -5,12 +5,7 @@
 <title>Task APP</title>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 
 	<!-- <link rel="stylesheet" type="text/css" href="<?php //echo base_url();?>assets/css/bootstrap.min.css">
 
@@ -29,7 +24,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo base_url(); ?>">CI APP</a>
+      <a class="navbar-brand" href="<?php echo base_url(); ?>">TASK APP</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,7 +66,21 @@
 	</div>
 
 </div>
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#myTable').DataTable();
+    $('#myTableTask').DataTable();
+  });
+
+</script>
 
 </body>
 </html>
