@@ -6,7 +6,7 @@
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-<link rel="stylesheet" type="text/css" href="../custom.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/custom.css">
 
 	<!-- <link rel="stylesheet" type="text/css" href="<?php //echo base_url();?>assets/css/bootstrap.min.css">
 
