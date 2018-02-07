@@ -35,15 +35,17 @@
 
 <h3>Active Task</h3>
 
-<ul>
+<ul class="list-group">
 <?php if($completed_tasks): ?>
 
 
 	<?php foreach ($completed_tasks as $task) : ?>
-		<li>
+		<li class="list-group-item"> 
 			<a href="<?php echo base_url();?>tasks/display/<?php echo $task->task_id; ?>">
-				<?php echo $task->task_name; ?> 
+				<?php echo strtoupper($task->task_name); ?> 
 			</a>
+
+			<span class="label label-danger">Not Completed</span>
 		</li>
 	<?php endforeach; ?>
 
@@ -56,15 +58,17 @@
 
 
 <h3>Completed Task</h3>
-<ul>
+<ul class="list-group">
 <?php if($not_completed_tasks): ?>
 
 
 	<?php foreach ($not_completed_tasks as $task) : ?>
-		<li>
+		<li class="list-group-item">
 			<a href="<?php echo base_url();?>tasks/display/<?php echo $task->task_id; ?>">
-				<?php echo $task->task_name; ?> 
+				<?php echo strtoupper($task->task_name) ;?> 
 			</a>
+
+			<span class="label label-primary">Completed</span>
 		</li>
 	<?php endforeach; ?>
 

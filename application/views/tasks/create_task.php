@@ -86,7 +86,6 @@ $data = array(
 'class' => 'btn btn-primary',
 'name' => 'submit',
 'value' => 'Create'
-
 )
 
 
@@ -94,7 +93,7 @@ $data = array(
 
 <?php echo form_submit($data); ?>
 
-<a class="btn btn-danger" href="<?php echo base_url();?>tasks/index">Back</a>
+<a class="btn btn-danger" href="<?php echo base_url();?>projects/display/<?php echo $project_data->id;?>">Back</a>
 
 </div>
 

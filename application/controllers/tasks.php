@@ -13,6 +13,8 @@ class Tasks extends CI_Controller {
 
 		$data['task'] = $this->task_model->get_task($task_id);
 
+
+
 		$data['main_view'] = "tasks/display";
 
 		$this->load->view('layouts/main', $data);
@@ -21,6 +23,8 @@ class Tasks extends CI_Controller {
 	}
 
 	public function create($project_id){
+
+		$data['project_data'] = $this->project_model->get_project($project_id);
 
 		$this->form_validation->set_rules('task_name','tasks Name','trim|required');
 		$this->form_validation->set_rules('task_body','Description tasks','trim|required');
@@ -47,7 +51,7 @@ class Tasks extends CI_Controller {
 				
 
 				$this->session->set_flashdata('project_created','you task success has been created');
-				redirect("projects//index");
+				redirect("projects/index");
 
 
 			}
@@ -94,7 +98,7 @@ class Tasks extends CI_Controller {
 				
 
 				$this->session->set_flashdata('task_updated','you task success has been updated');
-				redirect("projects//index");
+				redirect("projects/display");
 
 
 			}
