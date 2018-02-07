@@ -28,7 +28,7 @@ userdata('user_id'); ?>
 
 </p>
 
-
+<?php echo form_close(); ?>
 
 <?php else: ?>
 
