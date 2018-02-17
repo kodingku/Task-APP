@@ -1,4 +1,21 @@
+<?php 
 
+$home ="";
+$projects = "";
+$register = "";
+
+if ($this->uri->segment(1) == "projects") {
+    $projects = "active";
+}
+elseif ($this->uri->segment(2) == "register") {
+    $register = "active";
+}
+else {
+  $home = "active";
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,12 +48,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a></li>
+        <li class="<?php echo $home; ?>"><a href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a></li>
         <?php if ($this->session->userdata('logged_in')): ?>
-         <li><a href="<?php echo base_url();?>projects/index">Projects</a></li>
+         <li class="<?php echo $projects; ?>"><a href="<?php echo base_url();?>projects/index">Projects</a></li>
 
        <?php endif;?>
-        <li><a href="<?php echo base_url();?>users/register">Register</a></li>
+        <li class="<?php echo $register; ?>"> <a href="<?php echo base_url();?>users/register">Register</a></li>
         
       </ul>
      
